@@ -122,7 +122,7 @@ def start(video, botChoice):
 
 
     driver.get("https://zefoy.com")
-
+\\chromedriver.exe
     if driver.title == "zefoy.com | 502: Bad gateway":
             print(f"{color('>', 'red')} Zefoy Is Down... Attempting To Fix.\n")
             while driver.title == "zefoy.com | 502: Bad gateway":
@@ -135,7 +135,7 @@ def start(video, botChoice):
         print(f"\n{color('>', 'green')} Zefoy Is Up!\n")
 
     captchaCheck = input(f"{color('>>>', 'green')} Type \"y\" Once You Finished The Captcha: {Fore.LIGHTBLUE_EX}")
-    captchaFinish = False
+    captchaFinish = True
 
     if captchaCheck == "y":
         while captchaFinish != True:
